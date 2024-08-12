@@ -6,9 +6,8 @@ import { Toaster } from "sonner";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Simple Image Uploader",
-  description:
-    "shadcn inpired image uploader component built with shadcn/ui, react-drop-zone and zod",
+  title: "Search - IR 2024A",
+  description: "Proyecto final Recuperación de Información EPN 2024A",
 };
 
 export default function RootLayout({
