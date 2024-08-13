@@ -187,7 +187,14 @@ export const ImageUploader: React.FC = () => {
       </Form>
       {images.length !== 0 && (
         <div className="space-y-4">
-          <h3 className="text-3xl font-bold text-primary">Resultados</h3>
+          <div className="flex items-center justify-between">
+            <h3 className="text-3xl font-bold text-primary">Resultados </h3>
+            <div className="flex items-center gap-x-2 font-semibold text-[#008a2e]">
+              <p>Precisión: 59%</p>
+              <p>Recall: 7%</p>
+              <p>F1 Score: 12%</p>
+            </div>
+          </div>
           <div className="flex flex-wrap items-center justify-around gap-4">
             {images.map((image, index) => (
               <div key={index} className="space-y-2">
