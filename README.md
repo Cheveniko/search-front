@@ -1,16 +1,29 @@
-## Simple Image Uploader
+## Search Front
 
-[shadcn/ui](https://ui.shadcn.com/) is an amazing ui library but doesn't have an image uploader component. So I created one!
+Frontend del proyecto final para la materia Recuperación de Información - 2024A EPN
 
-It has image validation built in and customizable styles with [tailwindcss](https://tailwindcss.com/)
+El proyecto consiste en una aplicación web que permita a los usuarios ingresar una consulta y obtener una lista de imágenes relacionadas a la consulta.
 
-The image is validated inside a shadcn Form using zod, react-drop-zone and react-hook-form.
+El frontend fue desarrollado con [Next.js](https://nextjs.org/) y fue basado en el siguiente repositorio: [Simple Image Uploader](https://github.com/Cheveniko/simple-image-uploader)
 
-### Caveats
+## Cómo usar
 
-- This component only works on client components and should not be used directly from a Nextjs page or layout component
-- You need to be on NodeJs 20.x to use the File Interface which zod uses to verify the user uploads an image. If you can't update to Node 20.x you can skip that validation and use the native browser validation using required on the Input component.
+Para instalar el proyecto se debe clonar el repositorio, instalar las dependencias y ejecutar el servidor de desarrollo.
 
-### Demo
+```bash
 
-https://simple-image-uploader-bice.vercel.app/
+git clone https://github.com/Cheveniko/search-front.git
+cd search-front
+npm install
+npm run dev
+
+```
+
+## Autores
+
+- [@Cheveniko](https://github.com/Cheveniko)
+- [@Pinkylml](https://github.com/Pinkylml)
+
+## Backend
+
+El backend del proyecto donde se realiza el procesamiento e indexación de las imágenes se encuentra en el siguiente repositorio: [Search Back](https://github.com/Cheveniko/search-back)
